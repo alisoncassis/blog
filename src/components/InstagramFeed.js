@@ -28,6 +28,8 @@ export default class InstagramFeed extends Component {
   }
 
   componentDidMount() {
+    console.log(process.env)
+    console.log(JSON.parse(process.env))
     this.clearStorage()
     if (!this.state.mounted) {
       this.fetchInstagram()
