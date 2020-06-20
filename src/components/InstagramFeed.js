@@ -28,8 +28,6 @@ export default class InstagramFeed extends Component {
   }
 
   componentDidMount() {
-    console.log(process.env)
-    console.log(JSON.parse(process.env))
     this.clearStorage()
     if (!this.state.mounted) {
       this.fetchInstagram()
@@ -40,6 +38,7 @@ export default class InstagramFeed extends Component {
   }
 
   fetchInstagram = () => {
+    console.log(process.env)
     let instaFeed = localStorage.getItem('instaFeed')
       ? localStorage.getItem('instaFeed')
       : false
