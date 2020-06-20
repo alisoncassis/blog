@@ -4,11 +4,9 @@ import Image from '../components/Image'
 import './InstagramFeed.css'
 
 // A quick way to get your access token
-// https://instagram.pixelunion.net/
-
 export default class InstagramFeed extends Component {
   static defaultProps = {
-    accessToken: process.env.INSTAGRAM_KEY,
+    accessToken: '1501406749.452bff1.3a2af3671332421eb39a156433bc5c9d',
     count: 20
   }
 
@@ -38,7 +36,6 @@ export default class InstagramFeed extends Component {
   }
 
   fetchInstagram = () => {
-    console.log(process.env)
     let instaFeed = localStorage.getItem('instaFeed')
       ? localStorage.getItem('instaFeed')
       : false

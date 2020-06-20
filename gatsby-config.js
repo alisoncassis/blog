@@ -1,7 +1,4 @@
 const postcssPresetEnv = require('postcss-preset-env')
-require("dotenv").config({
-  path: '.env',
-})
 
 module.exports = {
   siteMetadata: {
