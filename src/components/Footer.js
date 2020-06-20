@@ -5,8 +5,12 @@ import './Footer.css'
 export default () => (
   <div>
     <h2 className="taCenter">
-      Follow us{' '}
-      <a href="https://instagram.com/thrivegoldcoast/">@thrivegoldcoast</a>
+      Follow me on{' '}
+      <a href="https://instagram.com/alison.cassis/">Instagram</a>
+      {' '},{' '}
+      <a href="https://linkedin.com/in/alisoncassis">LinkedIn</a>
+      {' '}and{' '}
+      <a href="https://medium.com/@alisoncassis">Medium</a>
     </h2>
     <br />
     <InstagramFeed count="8" />
@@ -14,7 +18,7 @@ export default () => (
       <div className="container taCenter">
         <span>
           © Copyright {new Date().getFullYear()} All rights reserved. Crafted by{' '}
-          <a href="https://thriveweb.com.au/">Thrive</a>.
+          <a href="#">Agência Millennials</a>.
         </span>
       </div>
     </footer>

@@ -1,21 +1,24 @@
 const postcssPresetEnv = require('postcss-preset-env')
+require("dotenv").config({
+  path: '.env',
+})
 
 module.exports = {
   siteMetadata: {
-    title: 'Yellowcake',
-    siteUrl: 'https://yellowcake.netlify.com'
+    title: 'Alison Cassis - Blog',
+    siteUrl: 'https://alisoncassis.netlify.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
-    {
-      resolve: 'gatsby-plugin-google-tagmanager',
-      options: {
-        /*id: 'GTM-add_your_tag_here',*/
-        id: 'GTM-P4RNF8D',
-        includeInDevelopment: false
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-google-tagmanager',
+    //   options: {
+    //     /*id: 'GTM-add_your_tag_here',*/
+    //     id: 'GTM-P4RNF8D',
+    //     includeInDevelopment: false
+    //   }
+    // },
     {
       resolve: 'gatsby-plugin-offline',
       options: {
@@ -44,15 +47,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'yellowcake',
-        short_name: 'yellowcake',
+        name: 'alisoncassis',
+        short_name: 'acassis',
         start_url: '/',
         background_color: '#00C2BD',
         theme_color: '#00C2BD',
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: 'standalone',
-        icon: `${__dirname}/static/images/logo.svg` // This path is relative to the root of the site.
+        icon: `${__dirname}/static/images/logo.png` // This path is relative to the root of the site.
       }
     },
 

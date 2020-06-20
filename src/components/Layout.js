@@ -41,12 +41,12 @@ export default ({ children, meta, title }) => {
       `}
       render={data => {
         const { siteTitle, socialMediaCard, googleTrackingId } =
-            data.settingsYaml || {},
+          data.settingsYaml || {},
           subNav = {
             posts: data.allPosts.hasOwnProperty('edges')
               ? data.allPosts.edges.map(post => {
-                  return { ...post.node.fields, ...post.node.frontmatter }
-                })
+                return { ...post.node.fields, ...post.node.frontmatter }
+              })
               : false
           }
 
@@ -73,7 +73,7 @@ export default ({ children, meta, title }) => {
               {...data.settingsYaml}
             />
 
-            <GithubCorner url="https://github.com/thriveweb/yellowcake" />
+            <GithubCorner url="https://github.com/alisoncassis/blog" />
 
             <Nav subNav={subNav} />
 
